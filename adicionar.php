@@ -11,17 +11,10 @@ if (isset($_POST['adicionar'])) {
     $nome = $_POST ['nome'];
     $quantidade = $_POST['quantidade'];
     $prazoentrega = $_POST['prazoentrega'];
-
-    /*if(!empty($_FILES['arquivo']['name'])){
-        $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
-        $novo_nome = md5(time(). $extensao);
-        $diretorio = "upload/";
-
-        move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio.$novo_nome);
-    /*}
-    else{
-        $novo_nome ="upload/imagem.png";
-    }*/
+}
+else{
+    $novo_nome ="upload/imagem.png";
+}
 
     $target_dir = "upload/";
     $target_file = $target_dir . basename($_FILES["arquivo"]["name"]);
@@ -42,7 +35,7 @@ if (isset($_POST['adicionar'])) {
         $query1 = "INSERT INTO btstpeca (codigo, nome, imagem, concluida, btsttrabalhador_username, quantidade, prazoentrega) VALUES ('$codigo','$nome','$image',false, '$username', '$quantidade', '$prazoentrega')";
         $resultado1 = pg_query($connection, $query1);
         $erro = "Peça adicionada com sucesso!";
-        header('location: menu.php');
+        //header('location: menu.php');
     }
 }
 ?>
