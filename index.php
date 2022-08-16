@@ -1,5 +1,5 @@
 <?php
-$str = "dbname=postgres user=postgres password=postgres host=localhost port=5432";
+$str = "dbname=heroku_8a45ef478b17676 user=b0cde06899dea0 password=5c6335ce host=eu-cdbr-west-03.cleardb.net";
 $connection = pg_connect($str);
 
 if(isset($_POST['entrar'])) {
