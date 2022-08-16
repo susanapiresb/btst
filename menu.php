@@ -77,7 +77,7 @@ if (isset($_POST['ordem'])){
     <?php
     $results_per_page = 3;
     
-    $q = "SELECT * from ddvv0meaeaknjq.btsttrabalhador";
+    $q = "SELECT * from ziytsfqigzzvhy.btsttrabalhador";
     $r = pg_query ($connection, $q);
     echo $r;
 
