@@ -1,6 +1,6 @@
 <?php
 session_start();
-$str = "dbname=postgres user=postgres password=postgres host=localhost port=5432";
+$str = "dbname=ddvv0meaeaknjq user=ziytsfqigzzvhy password=6c16f29cf98ff490a5b01096fd076a289e318d743a759ecbd41e5db3fd0faa82 host=ec2-54-194-211-183.eu-west-1.compute.amazonaws.com port=5432";
 $connection = pg_connect($str);
 ?>
 <!DOCTYPE html>
@@ -8,9 +8,9 @@ $connection = pg_connect($str);
 <head>
     <meta charset="UTF-8">
     <title>BTST</title>
-    <link type="text/css" rel="stylesheet" href="../BTST/css/header.css">
-    <link type="text/css" rel="stylesheet" href="../BTST/css/resultado.css">
-    <link type="text/css" rel="stylesheet" href="../BTST/css/menu.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/resultado.css">
+    <link type="text/css" rel="stylesheet" href="css/menu.css">
 </head>
 <body>
 <header>
@@ -53,9 +53,7 @@ if (isset($_POST['ordem'])) {
     <?php
 if (isset ($_POST['submit'])) {
     $pesquisar = $_POST['pesquisar'];
-
-
-
+    
     $query = "SELECT * FROM btstpeca WHERE concluida=false AND (nome LIKE '%$pesquisar%')";
     $result = pg_query($connection, $query) ; ?>
 
@@ -65,7 +63,6 @@ if (isset ($_POST['submit'])) {
 <?php
         //barra de pesquisar filmes
         if (pg_affected_rows($result) > 0) { ?>
-
             <div class="cabecalho">
                 <br>
                 <h1>Nº encomenda</h1>
@@ -73,10 +70,9 @@ if (isset ($_POST['submit'])) {
                 <h1>Prazo entrega</h1>
                 <p></p><p></p>
             </div>
-
+    
 <div class="grelha">
         <?php
-
         $results_per_page = 3;
 
         //LIMIT 3 OFFSET 3. RESULTADO: 4 e 5. Aparecem 3 resultados (LIMIT) a partir do 3 (OFFSET) (sem contar com o 3).
