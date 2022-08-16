@@ -102,7 +102,7 @@ if (isset ($_POST['submit'])) {
                 $cod = $dados['codigo'];    //codigo filme tabela
                 $datahoje = date('Y-m-d');
                 $imagem = $dados['imagem'];?>
-                <img src="../BTST/upload/<?php echo $dados['imagem']?>" height="120" width="80" alt="img">
+                <img src="upload/<?php echo $dados['imagem']?>" height="120" width="80" alt="img">
                 <p><?php echo $dados['codigo']; ?></p>
                 <p><?php echo $dados['nome']; ?></p>
 
