@@ -9,7 +9,7 @@ $connection = pg_connect($str);
 <head>
     <meta charset="UTF-8">
     <title>BTST</title>
-    <link rel="icon" type="imagem/png" href="../BTST/upload/imagem.png" />
+    <link rel="icon" type="imagem/png" href="upload/imagem.png" />
     <link type="text/css" rel="stylesheet" href="css/header.css">
     <link type="text/css" rel="stylesheet" href="css/menu.css">
 </head>
@@ -105,7 +105,7 @@ if (isset($_POST['ordem'])){
             $datahoje = date('Y-m-d');
     ?>
 
-    <img src="../BTST/upload/<?php echo $array['imagem']?>" height="120" width="80" alt="img">
+    <img src="upload/<?php echo $array['imagem']?>" height="120" width="80" alt="img">
 
     <p><?php echo $array['codigo']; ?></p>
     <p><?php echo $array['nome']; ?></p>
