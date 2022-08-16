@@ -8,7 +8,7 @@ $connection = pg_connect($str);
 <head>
     <meta charset="UTF-8">
     <title>BTST</title>
-    <link rel="icon" type="imagem/png" href="../BTST/upload/imagem.png" />
+    <link rel="icon" type="imagem/png" href="upload/imagem.png" />
     <link type="text/css" rel="stylesheet" href="css/header.css">
     <link type="text/css" rel="stylesheet" href="css/resultado.css">
     <link type="text/css" rel="stylesheet" href="css/menu.css">
@@ -103,7 +103,7 @@ if (pg_affected_rows($result) > 0) { ?>
         $date = $dados['prazoentrega'];
         $cod = $dados['codigo'];    //codigo filme tabela
         $imagem = $dados['imagem'];?>
-        <img src="../BTST/upload/<?php echo $dados['imagem']?>" height="120" width="80" alt="img">
+        <img src="upload/<?php echo $dados['imagem']?>" height="120" width="80" alt="img">
         <p><?php echo $dados['codigo']; ?></p>
         <p><?php echo $dados['nome']; ?></p>
         <p> <?php echo $date ?>
