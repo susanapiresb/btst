@@ -62,8 +62,8 @@ if(pg_affected_rows($result) > 0) for ($i=0; $i<pg_affected_rows($result); $i++)
 
 <div class="esq">
     <p>
-    <a href="../BTST/upload/<?php echo $arrayDetalhe['imagem']?>" target="_blank">
-        <img src="../BTST/upload/<?php echo $arrayDetalhe['imagem']?>" height="120" width="80" alt="img">
+    <a href="upload/<?php echo $arrayDetalhe['imagem']?>" target="_blank">
+        <img src="upload/<?php echo $arrayDetalhe['imagem']?>" height="120" width="80" alt="img">
     </a>
 <br><?php echo "<span>Nº encomenda: </span>"."<b style='font-family: Montserrat semibold, sans-serif'>".$arrayDetalhe['codigo']."</b>";?>
     <br> <?php echo "<span>Nome cliente: </span>"."<b style='font-family: Montserrat semibold, sans-serif'>".$arrayDetalhe['nome']."</b>";?>
