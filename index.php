@@ -46,7 +46,7 @@ if(isset($_POST['entrar'])) {
     <div>
         <h2>Login</h2>
 
-        <form action="" method="POST">
+        <form action="index.php" method="POST">
             <h3 id="username">Username</h3>
             <label>
                 <input id="input" type="text" name="username" placeholder="username" required>
