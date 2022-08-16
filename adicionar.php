@@ -28,7 +28,7 @@ if (isset($_POST['adicionar'])) {
         //header('location: index.php');
     }
     else {   //se essa peça ainda não foi adicionada, coloca-a na base de dados
-        $query1 = ddvv0meaeaknjq => "INSERT INTO btstpeca (codigo, nome, imagem, concluida, btsttrabalhador_username, quantidade, prazoentrega) VALUES ('$codigo','$nome','$image',false, '$username', '$quantidade', '$prazoentrega')";
+        $query1 = "INSERT INTO btstpeca (codigo, nome, imagem, concluida, btsttrabalhador_username, quantidade, prazoentrega) VALUES ('$codigo','$nome','$image',false, '$username', '$quantidade', '$prazoentrega')";
         $resultado1 = pg_query($connection, $query1);
         $erro = "Peça adicionada com sucesso!";
         //header('location: menu.php');
