@@ -1,0 +1,57 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    font-family: "Montserrat Thin", sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 3%;
+}
+
+form{
+    text-align: center;
+}
+
+input[type=submit] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10pt;
+    background-color: whitesmoke;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+input[name=sim] {
+    border: #90A676 solid 1px;
+    margin-right: 2%;
+}
+input[name=sim]:hover {
+    background-color: #90A676;
+    transition-duration: 0.5s;
+}
+input[name=nao] {
+    border: indianred solid 1px;
+}
+input[name=nao]:hover {
+    background-color: indianred;
+    transition-duration: 0.5s;
+}
+
+.eliminada{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 10pt;
+}
+.eliminada a{
+    text-decoration: none;
+    background-color: whitesmoke;
+    border: #90A676 solid 1px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    color: black;
+}
+.eliminada a:hover{
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+p#voltar{
+    margin-top: 2%;
+}

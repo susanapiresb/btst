@@ -1,0 +1,51 @@
+header{
+    background-color: #90A676;
+    padding: 0 1% 0 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    position:sticky;
+    z-index: 1;
+    top:1%;
+}
+
+header a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+    margin-left: 8%;
+    padding: 1% 1%;
+}
+
+header a:first-child{
+    margin-left: 20%;
+}
+
+header div{
+    border-left: 1px solid black;
+    height: 20px;
+    margin-left: 8%;
+}
+
+header a:hover{
+    background-color: white;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+a#voltar{
+    background-color: #90A676;
+    padding: 0.3% 0.6% 0.2% 0.5%;
+    color: black;
+    border: #90A676 solid 1px;
+}
+a#voltar:hover{
+    background-color: white;
+    transition-duration: 0.25s;
+}
+
+img {
+    font-size: 5pt;
+}

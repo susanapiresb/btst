@@ -1,0 +1,67 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10pt;
+}
+
+body a{
+    text-decoration: none;
+}
+
+.aviso{
+    text-align: center;
+    background-color: indianred;
+    padding: 0.25% 0.25% 0.25% 0.25%;
+}
+
+.conteudo{
+    width: 50%;
+    float: left;
+}
+.conteudo p{
+    background-color: whitesmoke;
+    padding: 2% 2% 2% 2%;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=file] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 9pt;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    background-color: whitesmoke;
+    margin-left: 1%;
+    width: 25%;
+}
+
+.material{
+    float: right;
+    margin-right: 20%;
+    text-align: center;
+}
+.material span{
+    font-size: 8pt;
+}
+
+#nencomenda, #nomecliente{
+    width: 50%;
+}
+
+input[type=submit]#editar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 9pt;
+    border: #90A676 solid 1px;
+    background-color: #90A676;
+    padding: 1% 1% 1% 1%;
+    margin-left: 2%;
+}
+input[type=submit]#editar:hover{
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
