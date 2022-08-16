@@ -76,6 +76,10 @@ if (isset($_POST['ordem'])){
 <div class="grelha">
     <?php
     $results_per_page = 3;
+    
+    $q = "SELECT * from ddvv0meaeaknjq.btstpeca";
+    $r = pg_query ($connection, $q);
+    echo $r;
 
     //LIMIT 3 OFFSET 3. RESULTADO: 4 e 5. Aparecem 3 resultados (LIMIT) a partir do 3 (OFFSET) (sem contar com o 3).
     $query = "SELECT * FROM btstpeca WHERE concluida=false ORDER BY $campo $ord";
