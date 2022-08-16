@@ -11,10 +11,6 @@ if (isset($_POST['adicionar'])) {
     $nome = $_POST ['nome'];
     $quantidade = $_POST['quantidade'];
     $prazoentrega = $_POST['prazoentrega'];
-}
-else{
-    $novo_nome ="upload/imagem.png";
-}
 
     $target_dir = "upload/";
     $target_file = $target_dir . basename($_FILES["arquivo"]["name"]);
