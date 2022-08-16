@@ -42,7 +42,7 @@ if (isset($_POST['adicionar'])) {
         $query1 = "INSERT INTO btstpeca (codigo, nome, imagem, concluida, btsttrabalhador_username, quantidade, prazoentrega) VALUES ('$codigo','$nome','$image',false, '$username', '$quantidade', '$prazoentrega')";
         $resultado1 = pg_query($connection, $query1);
         $erro = "Peça adicionada com sucesso!";
-        //header('location: menu.php');
+        header('location: menu.php');
     }
 }
 ?>
