@@ -36,8 +36,6 @@ if(isset($_POST['entrar'])) {
     <h1>BTST</h1>
 
     <div>
-        <h2>Login</h2>
-
         <form action="index.php" method="POST">
             <h3 id="username">Username</h3>
             <label>
@@ -58,5 +56,11 @@ if(isset($_POST['entrar'])) {
         </form>
     </div>
 </div>
+    <?php
+    $query = "SELECT * FROM btsttrabalhador WHERE username='$username' AND password='$password'";
+    $resultado = pg_query($connection, $query); 
+    echo $resultado;
+    ?>
+    
 </body>
 </html>
