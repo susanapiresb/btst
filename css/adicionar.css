@@ -1,0 +1,50 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10pt;
+}
+
+body a{
+    text-decoration: none;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=file] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 9pt;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    background-color: whitesmoke;
+    margin-left: 1%;
+    width: 25%;
+}
+
+.conteudo{
+    margin-top: 3%;
+}
+
+div p{
+    background-color: whitesmoke;
+    padding: 1% 1% 1% 2%;
+}
+
+#quantidade, #prazo{
+    width: 10%;
+}
+
+p#imagem{
+    margin-bottom: 0;
+}
+
+input[type=submit]#adicionar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 9pt;
+    border: #90A676 solid 1px;
+    background-color: #90A676;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin-left: 2%;
+}
+input[type=submit]#adicionar:hover{
+    background-color: white;
+    transition-duration: 0.5s;
+}
