@@ -102,7 +102,7 @@ if (isset($_POST['ordem'])) {
             $cod = $array['codigo'];    //codigo filme tabela
             ?>
 
-    <img src="../BTST/upload/<?php echo $array['imagem']?>" height="120" width="80" alt="img">
+    <img src="upload/<?php echo $array['imagem']?>" height="120" width="80" alt="img">
     <p> <?php echo $array['codigo']; ?> </p>
     <p> <?php echo $array['nome']; ?></p>
     <p> <?php echo $date ?>
