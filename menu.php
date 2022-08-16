@@ -11,7 +11,7 @@ $connection = pg_connect($str);
     <title>BTST</title>
     <link rel="icon" type="imagem/png" href="upload/imagem.png" />
     <link type="text/css" rel="stylesheet" href="css/header.css">
-    <!--<link type="text/css" rel="stylesheet" href="css/menu.css">-->
+    <link type="text/css" rel="stylesheet" href="css/menu.css">
 </head>
 <body>
 <header>
@@ -76,10 +76,6 @@ if (isset($_POST['ordem'])){
 <div class="grelha">
     <?php
     $results_per_page = 3;
-    
-    $q = "SELECT * from ziytsfqigzzvhy.btsttrabalhador";
-    $r = pg_query ($connection, $q);
-    echo $r;
 
     //LIMIT 3 OFFSET 3. RESULTADO: 4 e 5. Aparecem 3 resultados (LIMIT) a partir do 3 (OFFSET) (sem contar com o 3).
     $query = "SELECT * FROM btstpeca WHERE concluida=false ORDER BY $campo $ord";
