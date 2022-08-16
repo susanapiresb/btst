@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('verifica.php');
-$str = "dbname=postgres user=postgres password=postgres host=localhost port=5432";
+$str = "dbname=ddvv0meaeaknjq user=ziytsfqigzzvhy password=6c16f29cf98ff490a5b01096fd076a289e318d743a759ecbd41e5db3fd0faa82 host=ec2-54-194-211-183.eu-west-1.compute.amazonaws.com port=5432";
 $connection = pg_connect($str);
 
 $username = $_SESSION['username'];
@@ -13,7 +13,6 @@ if (isset($_POST['adicionar'])) {
     $prazoentrega = $_POST['prazoentrega'];
 
     /*if(!empty($_FILES['arquivo']['name'])){
-
         $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
         $novo_nome = md5(time(). $extensao);
         $diretorio = "upload/";
