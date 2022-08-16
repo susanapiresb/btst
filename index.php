@@ -1,5 +1,5 @@
 <?php
-$str = "dbname=heroku_8a45ef478b17676 user=b0cde06899dea0 password=5c6335ce host=eu-cdbr-west-03.cleardb.net";
+$str = "dbname=ddvv0meaeaknjq user=ziytsfqigzzvhy password=6c16f29cf98ff490a5b01096fd076a289e318d743a759ecbd41e5db3fd0faa82 host=ec2-54-194-211-183.eu-west-1.compute.amazonaws.com port=5432";
 $connection = pg_connect($str);
 
 if(isset($_POST['entrar'])) {
