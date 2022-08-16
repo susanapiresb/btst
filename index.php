@@ -28,7 +28,7 @@ if(isset($_POST['entrar'])) {
 <head>
     <meta charset="UTF-8">
     <title>BTST</title>
-    <link type="text/css" rel="stylesheet" href="../BTST/css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
