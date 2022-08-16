@@ -22,8 +22,7 @@ if(isset($_POST['entrar'])) {
     if (pg_affected_rows($resultado) == 1) {    //há um cliente na base de dados
         $_SESSION['username'] = $username;
 
-        header('Location: menu.php');
-        exit;
+        header('location: menu.php');
     }
 
     else {
