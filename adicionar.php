@@ -19,7 +19,7 @@ if (isset($_POST['adicionar'])) {
     move_uploaded_file($_FILES["arquivo"]["tmp_name"], $target_dir.$_FILES['arquivo']['name']);
 
     //para verificar que nao há outro filme igual
-    $query = ddvv0meaeaknjq => "SELECT codigo FROM btstpeca WHERE codigo = '$codigo'";
+    $query = "SELECT codigo FROM btstpeca WHERE codigo = '$codigo'";
     $resultado = pg_query($connection, $query);
 
 
