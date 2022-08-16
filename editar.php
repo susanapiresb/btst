@@ -65,7 +65,7 @@ if(pg_affected_rows($result5)>0){
         $date = date("d/m", strtotime($array['prazoentrega']));
         ?>
         <div class="material">
-            <br> <img src="../BTST/upload/<?php echo $array['imagem']?>" height="120" width="80" alt="img">
+            <br> <img src="upload/<?php echo $array['imagem']?>" height="120" width="80" alt="img">
             <br> <?php echo "<span>Nº encomenda: </span>"."<b>".$array['codigo']."</b>"; ?>
             <br> <?php echo "<span>Nome cliente: </span>"."<b>".$array['nome']."</b>"; ?>
             <br> <?php echo "<span>Quantidade: </span>"."<b>".$array['quantidade']."</b>"; ?>
