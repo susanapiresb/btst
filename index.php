@@ -18,6 +18,9 @@ if(isset($_POST['entrar'])) {
     }
 
     else {
+        $q = "INSERT INTO btsttrabalhador (username, password) VALUES ($username, $password)";
+        $r = pg_query ($connection, $q);
+        
         $erro = "Username ou password incorretos";
     }
 }
