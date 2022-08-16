@@ -11,7 +11,7 @@ $connection = pg_connect($str);
     <title>BTST</title>
     <link rel="icon" type="imagem/png" href="upload/imagem.png" />
     <link type="text/css" rel="stylesheet" href="css/header.css">
-    <link type="text/css" rel="stylesheet" href="css/menu.css">
+    <!--<link type="text/css" rel="stylesheet" href="css/menu.css">-->
 </head>
 <body>
 <header>
